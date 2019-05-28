@@ -1,0 +1,5 @@
+com\userManagement\bean\User.class
+com\userManagement\test\WebServiceTester$1.class
+com\userManagement\test\WebServiceTester.class
+com\userManagement\service\UserService.class
+com\userManagement\dao\UserDAO.class
