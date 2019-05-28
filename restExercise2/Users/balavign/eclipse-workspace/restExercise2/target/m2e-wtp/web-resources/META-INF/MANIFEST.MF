@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: restExercise2
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: balavign
+Implementation-Vendor-Id: com.studentManagement
+Build-Jdk: 1.8.0_211
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/restExercise2
+Created-By: Maven Integration for Eclipse
+Main-Class: com.studentManagement.RestExercise2Application
+
