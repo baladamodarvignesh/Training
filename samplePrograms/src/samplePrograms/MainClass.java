@@ -6,6 +6,7 @@ package samplePrograms;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -22,8 +23,39 @@ public class MainClass {
 		// TODO Auto-generated method stub
 //		System.out.print("hello world");
 		
-		 fileApp();
+//		 fileApp();
+		sort();
 
+	}
+	
+	public static void sort()
+	{
+		List<Person> values= new ArrayList<Person>();
+		values.add(new Person("bala",1.0));
+		values.add(new Person("malar",1.2));
+		values.add(new Person("roja",2.0));
+		values.add(new Person("king",2.5));
+		values.add(new Person("rog",1.0));
+		
+		Comparator<Person> compare= (p1,p2) -> {
+			if(p1.getProductRank()!=p2.getProductRank())
+			{
+				return Double.compare(p1.getProductRank(), p2.getProductRank());
+			}
+			else
+			{
+				return p1.getName().compareTo(p2.getName());
+			}
+		} ;
+		
+		values.forEach(person -> {System.out.println("Person: "+person.getName()+" "+person.getProductRank());});
+		
+		Sorting.sortingDESC(values, compare);
+		
+		System.out.println("\n");
+		
+		values.forEach(person -> {System.out.println("Person: "+person.getName()+" "+person.getProductRank());});
+		
 	}
 
 	public static void fileApp() {
